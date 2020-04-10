@@ -1,0 +1,11 @@
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.DataAccess.deps.json
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.DataAccess.dll
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.AssemblyInfo.cs
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.DataAccess.pdb
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.AppLogic.dll
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.AppLogic.pdb
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.csproj.CopyComplete
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.dll
+C:\Users\Alex\source\repos\GymProject\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.pdb
