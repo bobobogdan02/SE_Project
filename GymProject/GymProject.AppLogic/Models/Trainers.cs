@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 namespace GymProject.AppLogic.Models
 {
     public class Trainers
+
     {
-        public int Id { get; set; }
-        public int IdClass { get; set; }
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public Classes Classes { get; set; }
+        public Classes ClassId { get; set; }
+
+        public void Update(string name, string surname, Classes classId)
+        {
+            this.Name = name;
+            this.Surname = surname;
+            this.ClassId = classId;
+        }
     }
+   
+   
 }
+

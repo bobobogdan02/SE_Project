@@ -6,3 +6,12 @@ C:\Users\Alex\source\repos\GymProject\GymProject.AppLogic\obj\Debug\netstandard2
 C:\Users\Alex\source\repos\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
 C:\Users\Alex\source\repos\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
 C:\Users\Alex\source\repos\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.deps.json
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.dll
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.pdb
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csprojAssemblyReference.cache
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfoInputs.cache
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb
+C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csproj.CoreCompileInputs.cache

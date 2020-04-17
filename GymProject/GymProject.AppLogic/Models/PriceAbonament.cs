@@ -7,8 +7,10 @@ namespace GymProject.AppLogic.Models
 {
     public class PriceAbonament
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public int MonthDuration { get; set; }
+        public string TypeAbonament { get; set; }
+        public float Price { get; set; }
         
     }
 

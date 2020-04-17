@@ -7,7 +7,7 @@ namespace GymProject.AppLogic.Models
 {
     public class Classes
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string ClassName { get; set; }
         public DateTime HourClass { get; set; }
     }

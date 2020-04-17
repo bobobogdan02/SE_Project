@@ -19,18 +19,14 @@ namespace GymProject.DataAccess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("GymProject.AppLogic.Models.BookClass", b =>
+            modelBuilder.Entity("GymProject.AppLogic.Models.Booking", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int?>("ClassesId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdClass")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("ClassIdId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -41,19 +37,21 @@ namespace GymProject.DataAccess.Migrations
                     b.Property<string>("Surname")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ClassesId");
+                    b.HasIndex("ClassIdId");
 
-                    b.ToTable("BookClasses");
+                    b.ToTable("Booking");
                 });
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Classes", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ClassName")
                         .HasColumnType("nvarchar(max)");
@@ -68,10 +66,9 @@ namespace GymProject.DataAccess.Migrations
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Corporate", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CompanysName")
                         .HasColumnType("nvarchar(max)");
@@ -98,13 +95,12 @@ namespace GymProject.DataAccess.Migrations
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Employees", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("JobApplication")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid?>("JobsIdId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -114,47 +110,58 @@ namespace GymProject.DataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("JobsIdId");
+
                     b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Facilities", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("Classes")
-                        .HasColumnType("bit");
+                    b.Property<string>("AbonamentFacilities")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("FitnessGym")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("IdPrices")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("Sauna")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("pricesId")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("priceAbonamentIdId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("pricesId");
+                    b.HasIndex("priceAbonamentIdId");
 
                     b.ToTable("Facilities");
                 });
 
+            modelBuilder.Entity("GymProject.AppLogic.Models.Jobs", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("TypeJob")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Jobs");
+                });
+
             modelBuilder.Entity("GymProject.AppLogic.Models.PriceAbonament", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("MonthDuration")
                         .HasColumnType("int");
+
+                    b.Property<float>("Price")
+                        .HasColumnType("real");
+
+                    b.Property<string>("TypeAbonament")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -163,61 +170,56 @@ namespace GymProject.DataAccess.Migrations
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Progress", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("ArmLeft")
-                        .HasColumnType("int");
+                    b.Property<float>("ArmLeft")
+                        .HasColumnType("real");
 
-                    b.Property<int>("ArmRight")
-                        .HasColumnType("int");
+                    b.Property<float>("ArmRight")
+                        .HasColumnType("real");
 
-                    b.Property<int>("Belly")
-                        .HasColumnType("int");
+                    b.Property<float>("Belly")
+                        .HasColumnType("real");
 
-                    b.Property<int>("Chest")
-                        .HasColumnType("int");
+                    b.Property<float>("Chest")
+                        .HasColumnType("real");
 
-                    b.Property<int>("Fesier")
-                        .HasColumnType("int");
+                    b.Property<float>("Fesier")
+                        .HasColumnType("real");
 
                     b.Property<string>("Gender")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Height")
-                        .HasColumnType("int");
+                    b.Property<float>("Height")
+                        .HasColumnType("real");
 
-                    b.Property<int>("IdUser")
-                        .HasColumnType("int");
+                    b.Property<float>("Kg")
+                        .HasColumnType("real");
 
-                    b.Property<int>("Kg")
-                        .HasColumnType("int");
+                    b.Property<float>("Legs")
+                        .HasColumnType("real");
 
-                    b.Property<int>("Legs")
-                        .HasColumnType("int");
+                    b.Property<float>("Shoulders")
+                        .HasColumnType("real");
 
-                    b.Property<int>("Shoulders")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Progresses");
+                    b.ToTable("Progress");
                 });
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Trainers", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int?>("ClassesId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdClass")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("ClassIdId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -227,30 +229,37 @@ namespace GymProject.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClassesId");
+                    b.HasIndex("ClassIdId");
 
                     b.ToTable("Trainers");
                 });
 
-            modelBuilder.Entity("GymProject.AppLogic.Models.BookClass", b =>
+            modelBuilder.Entity("GymProject.AppLogic.Models.Booking", b =>
                 {
-                    b.HasOne("GymProject.AppLogic.Models.Classes", "Classes")
+                    b.HasOne("GymProject.AppLogic.Models.Classes", "ClassId")
                         .WithMany()
-                        .HasForeignKey("ClassesId");
+                        .HasForeignKey("ClassIdId");
+                });
+
+            modelBuilder.Entity("GymProject.AppLogic.Models.Employees", b =>
+                {
+                    b.HasOne("GymProject.AppLogic.Models.Jobs", "JobsId")
+                        .WithMany()
+                        .HasForeignKey("JobsIdId");
                 });
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Facilities", b =>
                 {
-                    b.HasOne("GymProject.AppLogic.Models.PriceAbonament", "prices")
+                    b.HasOne("GymProject.AppLogic.Models.PriceAbonament", "priceAbonamentId")
                         .WithMany()
-                        .HasForeignKey("pricesId");
+                        .HasForeignKey("priceAbonamentIdId");
                 });
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Trainers", b =>
                 {
-                    b.HasOne("GymProject.AppLogic.Models.Classes", "Classes")
+                    b.HasOne("GymProject.AppLogic.Models.Classes", "ClassId")
                         .WithMany()
-                        .HasForeignKey("ClassesId");
+                        .HasForeignKey("ClassIdId");
                 });
 #pragma warning restore 612, 618
         }

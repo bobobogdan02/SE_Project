@@ -7,17 +7,17 @@ namespace GymProject.AppLogic.Models
 {
     public class Progress
     {
-        public int Id { get; set; }
-        public int IdUser { get; set; }
-        public int Kg { get; set; }
-        public int Height { get; set; }
-        public int ArmLeft { get; set; }
-        public int ArmRight { get; set; }
-        public int Shoulders { get; set; }
-        public int Chest { get; set; }
-        public int Belly { get; set; }
-        public int Fesier { get; set; }
-        public int Legs { get; set; }
+        public Guid Id { get; set; }
+        public Guid UserId { get; set; }
+        public float Kg { get; set; }
+        public float Height { get; set; }
+        public float ArmLeft { get; set; }
+        public float ArmRight { get; set; }
+        public float Shoulders { get; set; }
+        public float Chest { get; set; }
+        public float Belly { get; set; }
+        public float Fesier { get; set; }
+        public float Legs { get; set; }
         public string Gender { get; set; }
 
     }

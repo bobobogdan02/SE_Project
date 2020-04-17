@@ -34,7 +34,7 @@ namespace GymProject
 
             services.AddDbContext<GymDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection1")));
+                    Configuration.GetConnectionString("DefaultConnection2")));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();

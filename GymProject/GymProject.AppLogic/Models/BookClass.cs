@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 
 namespace GymProject.AppLogic.Models
 {
-    public class BookClass
+    public class Booking
     {
-        public int Id { get; set; }
-        public int IdClass { get; set; }
+        public Guid Id { get; set; }
+        public Guid UserId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string PhoneNr { get; set; }
-        public Classes Classes { get; set; }
+        public Classes ClassId { get; set; }
 
     }
 }
