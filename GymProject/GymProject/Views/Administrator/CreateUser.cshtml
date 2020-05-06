@@ -1,0 +1,27 @@
+﻿@model GymProject.ViewModel.Administrator.NewEmployeeViewModel
+@{
+    ViewData["Title"] = "CreateUser";
+}
+
+<h1>CreateUser</h1>
+<form asp-action="CreateUser">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="control-label"></label>
+        <input asp-for="Password" class="form-control" type="password" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Jobs" class="control-label"></label>
+        @Html.DropDownListFor(job => job.JobId, new SelectList(Model.Jobs, "Id", "Name"), "SelectJob", new {@class = "form-class"})
+    </div>
+    <input type="submit" value="Create" class="btn btn-primary" />
+
+</form>
+

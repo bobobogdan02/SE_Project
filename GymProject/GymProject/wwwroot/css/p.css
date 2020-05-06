@@ -1,0 +1,49 @@
+﻿.main {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+    .main span {
+        color: white;
+        text-transform: uppercase;
+        display: block;
+    }
+
+.text {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    animation: text 2s 1;
+}
+
+.text1 {
+    font-size: 20px;
+    color: rgb(67, 42, 179);
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    0% {
+        color: rgb(175, 38, 38);
+        margin-bottom: 40px;
+    }
+
+    30% {
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+    }
+}
