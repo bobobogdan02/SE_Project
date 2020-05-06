@@ -7,9 +7,9 @@ namespace GymProject.ViewModel.Trainers
 {
     public class TrainersViewModel
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public Classes Classes { get; set; }
+        public Classes classId { get; set; }
     }
 }

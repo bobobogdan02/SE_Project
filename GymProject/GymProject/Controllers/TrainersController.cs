@@ -22,13 +22,34 @@ namespace GymProject.Controllers
         {
             this.trainersServices = trainersServices;
         }
+        class Trainer
+        {
+            string TrainerName;
+            string TrainerSurname;
+            string ClassName;
+           public  Trainer (string name,string surname,string className)
+            {
+                this.TrainerName = name;
+                this.TrainerSurname = surname;
+                this.ClassName = className;
+            }
+        }
+
 
         public IActionResult Index()
         {
             try
             {
                 var trainersList = trainersServices.GetAllTrainers();
-                return View(trainersList);
+                List<Trainer> trainers = new List<Trainer>();
+                
+                foreach (var obj in trainersList)
+                {
+                    var name = trainersServices.GetClassName(obj.ClassId);
+                    var info = new Trainer(obj.Name,obj.Surname,name);
+                    trainers.Add(info);
+                }
+                return View(trainers);
             }
             catch (Exception)
             {
@@ -49,7 +70,7 @@ namespace GymProject.Controllers
                 return BadRequest();
             }
             trainersServices.AddTrainer(model.classId,model.Name, model.Surname);
-            return RedirectToAction("Index", "TrainersController");
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public IActionResult Edit(Guid id)
@@ -72,6 +93,31 @@ namespace GymProject.Controllers
             }
 
 
+        }
+        [HttpPost]
+        public IActionResult Edit(TrainersViewModel viewModel)
+        {
+            try
+            {
+                trainersServices.Update(viewModel.Id,viewModel.Name, viewModel.Surname, viewModel.classId);
+                return RedirectToAction("Index");
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+        public IActionResult Delete (string Id)
+        {
+            try
+            {
+                trainersServices.Delete(Id);
+                return RedirectToAction("Index");
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
     } 

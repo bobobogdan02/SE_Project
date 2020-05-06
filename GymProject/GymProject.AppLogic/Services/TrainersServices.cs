@@ -66,7 +66,7 @@ namespace GymProject.AppLogic.Services
             trainersRepository?.Delete(trainers);
             
         }
-        public Classes ClassName(Classes classId)
+        public string GetClassName(Classes classId)
         {
             return trainersRepository.GetClassName(classId);
         }

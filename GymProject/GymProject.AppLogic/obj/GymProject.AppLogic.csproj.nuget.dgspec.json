@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {}
+    "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
+    "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj",
+        "projectUniqueName": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj",
         "projectName": "GymProject.AppLogic",
-        "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj",
-        "packagesPath": "C:\\Users\\Bianca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\obj\\",
+        "projectPath": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj",
+        "packagesPath": "C:\\Users\\Bogdan\\.nuget\\packages\\",
+        "outputPath": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bianca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bogdan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,7 +59,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

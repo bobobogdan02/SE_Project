@@ -6128,19 +6128,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bianca\\.nuget\\packages\\": {}
+    "C:\\Users\\Bogdan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\GymProject.DataAccess.csproj",
+      "projectUniqueName": "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj",
       "projectName": "GymProject.DataAccess",
-      "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\GymProject.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Bianca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\obj\\",
+      "projectPath": "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\Bogdan\\.nuget\\packages\\",
+      "outputPath": "G:\\Gym2020\\GYM\\GymProject.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bianca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bogdan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6153,8 +6153,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
-              "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj"
+            "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
+              "projectPath": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj"
             }
           }
         }
@@ -6197,7 +6197,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -93,28 +93,6 @@ namespace GymProject.DataAccess.Migrations
                     b.ToTable("Corporates");
                 });
 
-            modelBuilder.Entity("GymProject.AppLogic.Models.Employees", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("JobsIdId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Surname")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("JobsIdId");
-
-                    b.ToTable("Employees");
-                });
-
             modelBuilder.Entity("GymProject.AppLogic.Models.Facilities", b =>
                 {
                     b.Property<Guid>("Id")
@@ -132,20 +110,6 @@ namespace GymProject.DataAccess.Migrations
                     b.HasIndex("priceAbonamentIdId");
 
                     b.ToTable("Facilities");
-                });
-
-            modelBuilder.Entity("GymProject.AppLogic.Models.Jobs", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("TypeJob")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Jobs");
                 });
 
             modelBuilder.Entity("GymProject.AppLogic.Models.PriceAbonament", b =>
@@ -239,13 +203,6 @@ namespace GymProject.DataAccess.Migrations
                     b.HasOne("GymProject.AppLogic.Models.Classes", "ClassId")
                         .WithMany()
                         .HasForeignKey("ClassIdId");
-                });
-
-            modelBuilder.Entity("GymProject.AppLogic.Models.Employees", b =>
-                {
-                    b.HasOne("GymProject.AppLogic.Models.Jobs", "JobsId")
-                        .WithMany()
-                        .HasForeignKey("JobsIdId");
                 });
 
             modelBuilder.Entity("GymProject.AppLogic.Models.Facilities", b =>

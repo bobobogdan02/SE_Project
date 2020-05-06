@@ -15,3 +15,20 @@ C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\
 C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
 C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb
 C:\Users\Bianca\Desktop\GymProject\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csproj.CoreCompileInputs.cache
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.deps.json
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.dll
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.pdb
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csprojAssemblyReference.cache
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csproj.CoreCompileInputs.cache
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfoInputs.cache
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
+C:\Users\Tabacu Bianca\Desktop\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb
+G:\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.deps.json
+G:\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.dll
+G:\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.pdb
+G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csprojAssemblyReference.cache
+G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfoInputs.cache
+G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
+G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
+G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb

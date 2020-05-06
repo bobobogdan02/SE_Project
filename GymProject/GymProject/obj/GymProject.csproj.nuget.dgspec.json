@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject\\GymProject.csproj": {}
+    "G:\\Gym2020\\GYM\\GymProject\\GymProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
+    "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj",
+        "projectUniqueName": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj",
         "projectName": "GymProject.AppLogic",
-        "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj",
-        "packagesPath": "C:\\Users\\Bianca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\obj\\",
+        "projectPath": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj",
+        "packagesPath": "C:\\Users\\Bogdan\\.nuget\\packages\\",
+        "outputPath": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bianca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bogdan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,21 +59,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\GymProject.DataAccess.csproj": {
+    "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\GymProject.DataAccess.csproj",
+        "projectUniqueName": "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj",
         "projectName": "GymProject.DataAccess",
-        "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\GymProject.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Bianca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\obj\\",
+        "projectPath": "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Bogdan\\.nuget\\packages\\",
+        "outputPath": "G:\\Gym2020\\GYM\\GymProject.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bianca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bogdan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,8 +86,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
-                "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj"
+              "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
+                "projectPath": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj"
               }
             }
           }
@@ -130,21 +130,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject\\GymProject.csproj": {
+    "G:\\Gym2020\\GYM\\GymProject\\GymProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject\\GymProject.csproj",
+        "projectUniqueName": "G:\\Gym2020\\GYM\\GymProject\\GymProject.csproj",
         "projectName": "GymProject",
-        "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject\\GymProject.csproj",
-        "packagesPath": "C:\\Users\\Bianca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject\\obj\\",
+        "projectPath": "G:\\Gym2020\\GYM\\GymProject\\GymProject.csproj",
+        "packagesPath": "C:\\Users\\Bogdan\\.nuget\\packages\\",
+        "outputPath": "G:\\Gym2020\\GYM\\GymProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bianca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bogdan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -157,11 +157,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
-                "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.AppLogic\\GymProject.AppLogic.csproj"
+              "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
+                "projectPath": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj"
               },
-              "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\GymProject.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Bianca\\Desktop\\GymProject\\GymProject.DataAccess\\GymProject.DataAccess.csproj"
+              "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj": {
+                "projectPath": "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj"
               }
             }
           }
@@ -193,7 +193,7 @@
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -203,7 +203,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.2, )"
             }
           },
           "imports": [
@@ -224,7 +224,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

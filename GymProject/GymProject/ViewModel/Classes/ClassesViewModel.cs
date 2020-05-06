@@ -7,5 +7,8 @@ namespace GymProject.ViewModel
 {
     public class ClassesViewModel
     {
+        public Guid Id { get; set; }
+        public string ClassName { get; set; }
+        public DateTime HourClass { get; set; }
     }
 }

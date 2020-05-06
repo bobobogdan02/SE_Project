@@ -4,7 +4,6 @@ using System.Text;
 using GymProject.AppLogic.Models;
 using GymProject.AppLogic.Repository;
 using System;
-
 namespace GymProject.DataAccess.BaseRepository
 {
     public class TrainersRepository : BaseRepository<Trainers>, ITrainersRepository
@@ -20,12 +19,12 @@ namespace GymProject.DataAccess.BaseRepository
         }
         public Trainers GetTrainersByClass(Classes classId)
         {
-            // return dbContext.Trainers.Where(trainer => trainer.Classes.Equals(classId)).SingleOrDefault();
+             //return dbContext.Trainers.Where(trainer => trainer.Classes.Equals(classId)).SingleOrDefault();
             throw new Exception();
         }
         public Trainers GetTrainersById(Guid Id)
         {
-            // return dbContext.Trainers.Where(trainer => trainer.Id == Id).SingleOrDefault();
+           // return dbContext.Trainers.Where(trainer => trainer.Id == Id).SingleOrDefault();
             throw new Exception();
         }
         public string GetClassName(Classes classId)
