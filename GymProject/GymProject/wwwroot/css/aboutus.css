@@ -1,0 +1,79 @@
+body{
+    background: black;
+}
+.main-p{
+    width: 100%;
+    height: auto;
+    background: black;
+}
+.main-p h2{
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+.main-p p{
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: larger;
+    color: white;
+    font-size: 2rem;
+	font-weight: 300;
+}
+.main-p span{
+    color: crimson;
+    font-size: 2rem;
+	font-weight: 300;
+}
+.main-cont{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(ff.jpg);
+    background-size: cover;
+    padding-bottom: 40px;
+}
+.main-cont image{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+.image{
+    width: 90%;
+    margin: 0 auto;
+}
+.image img{
+    height: 350px;
+    width: 400px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.main-cont button{
+    width: 120px;
+    height: 50px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    margin: 20px 0 0 700px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+.main-cont button:hover{
+    background-color: rgb(253, 130, 155);
+}
+.contact{
+    margin-top: 60px;
+}
+.contact p{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.contact h3{
+    margin: 10px 300px 10px 300px;
+    text-align: center;
+    color: white;
+    
+}

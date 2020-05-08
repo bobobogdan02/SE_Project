@@ -1,91 +1,87 @@
-﻿html, body {
+html, body{
     width: 100%;
+    
+
+}
+header{
+    background: rgb(0, 0, 0);  
+    width: 100%;
+	height: 15vh;     
 }
 
-header {
-    background: rgb(0, 0, 0);
-    width: 100%;
-    height: 15vh;
-}
-
-.body {
+.body{
     background-color: white;
     width: 100%;
     padding-top: 15px;
 }
 
-    .body .first {
-        width: 100%;
-        font-family: "Times New Roman", Times, serif;
-        font-size: larger;
-    }
+.body .first{
+    width: 100%;    
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
 
-.first h1 {
+}
+.first h1{
     height: 50px;
     text-align: center;
 }
-
-.first h3 {
+.first h3{
     margin: 10px 300px 10px 300px;
     text-align: center;
 }
 
-.imagebck {
+.imagebck{
     background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(corporates.jpg);
-    background-size: cover;
+    background-size:cover;  
     background-repeat: no-repeat;
     font-family: 'Times New Roman', Times, serif white;
-    width: 100%;
+    width: 100%;    
     padding-top: 50px;
+
 }
-
-    .imagebck h1 {
-        color: white;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
-    .imagebck h2 {
-        color: white;
-    }
-
-span {
+.imagebck h1{
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+ .imagebck h2{
+     color: white;
+ }
+ span {
     margin-left: 50px;
     content: "\2713";
     color: crimson;
-}
+  }
+  .paragraph{
+      height: 25%;
+      border-bottom: 2px solid yellow;
+  }
 
-.paragraph {
-    height: 25%;
-    border-bottom: 2px solid yellow;
-}
+ .styledot{
+      width: 100%;
+      
+  }
 
-.styledot {
-    width: 100%;
-}
+  .styledot h1{
+    width: 100%;    
+    font-family: "Times New Roman", Times, serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .styledot p{
+    width: 100%;    
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    text-align: center;
 
-    .styledot h1 {
-        width: 100%;
-        font-family: "Times New Roman", Times, serif;
-        font-size: x-large;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    .styledot p {
-        width: 100%;
-        font-family: "Times New Roman", Times, serif;
-        font-size: large;
-        text-align: center;
-    }
-
-.dot {
-    height: 350px;
-    width: 100%;
-    background-color: white;
-}
-
-.dot1 {
+  }
+  .dot{
+      height: 350px;
+      width: 100%;
+      background-color: white;
+  }
+.dot1{
     width: 15%;
     height: 200px;
     background-color: yellow;
@@ -94,9 +90,26 @@ span {
     margin-left: 200px;
     margin-top: 50px;
     margin-right: 50px;
+  }
+.dot2{
+    width: 15%;
+    height: 200px;
+    background-color: yellow;
+    float: left;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-right: 50px;
 }
-
-.dot2 {
+.dot3{
+    width: 15%;
+    height: 200px;
+    background-color: yellow;
+    float: left;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.dot4{
     width: 15%;
     height: 200px;
     background-color: yellow;
@@ -106,96 +119,73 @@ span {
     margin-right: 50px;
 }
 
-.dot3 {
-    width: 15%;
-    height: 200px;
-    background-color: yellow;
-    float: left;
-    border-radius: 50%;
-    margin-top: 50px;
-    margin-right: 50px;
-}
 
-.dot4 {
-    width: 15%;
-    height: 200px;
-    background-color: yellow;
-    float: left;
-    border-radius: 50%;
-    margin-top: 50px;
-    margin-right: 50px;
-}
-
-
-.dot .number {
+.dot .number{
     font-size: 80px;
     font-weight: bold;
     margin-top: 30px;
 }
-
-.dot .dottext {
+.dot .dottext{
     font-size: large;
     font-weight: bold;
 }
-
-.dot .number, .dottext {
+.dot .number,.dottext{
     margin-left: 90px;
+   
 }
-
-.dot2 .dottext {
+.dot2 .dottext{
     margin-left: 60px;
 }
-
-.dot3 .dottext {
+.dot3 .dottext{
     margin-left: 70px;
 }
-
-.dot4 .dottext {
+.dot4 .dottext{
     margin-left: 40px;
 }
-
-.offer {
-    width: 100%;
+.offer{
+    width: 100%;    
     font-family: ""Times New Roman", Times, serif";
     font-size: larger;
 }
+.offer p{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.offer h3{
+    margin: 10px 300px 10px 300px;
+    text-align: center;
+}
 
-    .offer p {
-        font-size: 40px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .offer h3 {
-        margin: 10px 300px 10px 300px;
-        text-align: center;
-    }
-
-.info input {
+.info input
+{
     width: 50%;
-    height: 25px;
+    height:25px;
     margin-left: 120px;
     margin-top: 20px;
     border-radius: 10px;
 }
-
-.info-left {
+.info-left{
     width: 50%;
     float: left;
+   
+    
 }
-
-.info-right {
+.info-right{
     width: 50%;
     float: left;
+    
+    
 }
 
-.form {
-    width: 75%;
-    margin: 30px auto;
+.form
+{
+    width:75%;
+    margin:30px auto;
+    
     height: 200PX;
 }
-
-.button {
+.button{
     width: 100px;
     height: 40px;
     box-shadow: 0 5px 25px rgba(189, 181, 181, 0.5);
@@ -203,22 +193,19 @@ span {
     border-radius: 10px;
     background-color: rgba(165, 160, 160, 0.349);
 }
-
-    .button:hover {
-        background-color: yellow;
-    }
-
-.contact {
-    margin-top: 60px;
+.button:hover{
+    background-color: yellow;
 }
 
-    .contact p {
-        font-size: 40px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .contact h3 {
-        margin: 10px 300px 10px 300px;
-        text-align: center;
-    }
+.contact{
+    margin-top: 60px;
+}
+.contact p{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.contact h3{
+    margin: 10px 300px 10px 300px;
+    text-align: center;
+}

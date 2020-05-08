@@ -3,39 +3,190 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Surname)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Surname)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+.body{
+    background-color: white;
+    width: 100%;
+    padding-top: 15px;
 }
-    </tbody>
-</table>
+.body-main{
+    height: 350px;
+    width: 100%;
+}
+.abonament
+{ 
+ 
+ width:60%;
+ height:200px;
+ margin:30px auto;
+}
+.abonament h1 
+{
+    text-align: center;
+    /* padding-top:20px; */
+}
+.abonament p
+{
+    text-align: center;
+    margin-top:20px;
+    font-size: 1.3rem;
+
+    
+}
+.text
+{
+    width:70%;
+    margin:20px auto;
+}
+.text h1{
+text-align: center;
+padding:20px;
+}
+.prices
+{
+    width:100%;
+    height:150px;
+    
+}
+.prices-top
+{
+    height:75px;
+    width:100%;
+    background-color: black;
+    margin-top: 20px;
+}
+.prices-bottom
+{
+    height:75px;
+    width:100%;
+    background-color: yellow;
+    padding: 20px;
+}
+.top
+{
+    color:white;
+    font-weight: bold;
+    font-size: x-large;
+}
+.bottom
+{
+    color:white;
+    font-size:medium ;
+
+}
+.text-bottom
+{
+    text-align: center;
+    font-size: small;
+}
+
+.h1
+{
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+.trainers
+{
+    width:72%;
+    margin:0 auto;
+   
+
+}
+</style>
+
+<div class="body-main">
+    <div class="abonament">
+        <h1>ANTRENORI PERSONALI PENTRU SESIUNI DE GRUP</h1>
+        <p>
+            Acum poți avea parte de sesiuni de personal training alături de cei dragi. Formează-ți un grup de până la 3 persoane și antrenați-vă împreună cu ajutorul instructorilor noștri specializați. Astfel economisești bani, te antrenezi într-un mediu plăcut și îți atingi mai repede obiectivele tale de fitness.
+            Cu certificări de specialitate care asigură faptul că ai parte de un program eficient, instructorii noștri îți oferă ție și prietenilor tăi impulsul de care ai nevoie pentru a-ți schimba viața.
+        </p>
+    </div>
+    <div class="text">
+        <h1>ABONAMENTE PERSONAL TRAINING GROUP</h1>
+        <div class="prices">
+            <div class="prices-top">
+                <p class="top">8 ȘEDINȚE DE PT GROUP</p><br>
+                <p class="bottom">Ședințele pot fi folosite în maxim 30 de zile.</p>
+            </div>
+            <div class="prices-bottom">
+                <p class="text-bottom">
+                    2 sau 3 persoane<br>
+                    99 EUR / persoană
+                </p>
+
+            </div>
+        </div>
+        <div class="prices">
+            <div class="prices-top">
+                <p class="top">12 ȘEDINȚE DE PT GROUP</p><br>
+                <p class="bottom">Ședințele pot fi folosite în maxim 30 de zile.</p>
+            </div>
+            <div class="prices-bottom">
+                <p class="text-bottom">
+                    2 sau 3 persoane<br>
+                    99 EUR / persoană
+                </p>
+
+            </div>
+        </div>
+        <div class="prices">
+            <div class="prices-top">
+                <p class="top">16 ȘEDINȚE DE PT GROUP</p><br>
+                <p class="bottom">Ședințele pot fi folosite în maxim 30 de zile.</p>
+            </div>
+            <div class="prices-bottom">
+                <p class="text-bottom">
+                    2 sau 3 persoane<br>
+                    99 EUR / persoană
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+    <h1 class="h1">ANTRENORII NOȘTRI</h1>
+    <p>
+        <a  asp-action="AddTrainer">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Surname
+                </th>
+                <th>
+                    Class
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Surname
+                    </td>
+                    <td>
+                        @item.ClassId
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

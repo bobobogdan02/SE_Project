@@ -1,0 +1,153 @@
+﻿html, body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 10vh;
+}
+
+.body {
+    background-color: black;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.body-main {
+    height: 350px;
+    width: 100%;
+    background-color: black;
+}
+
+.up {
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+    .up p {
+        font-weight: bold;
+        font-size: large;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 30px;
+        float: left;
+        color: crimson;
+    }
+
+.h1 {
+    margin-top: 20px;
+}
+
+    .h1 h1 {
+        font-weight: bold;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 30px;
+        color: rgb(117, 12, 53);
+        text-align: center;
+    }
+
+.btn button {
+    width: 150px;
+    height: 40px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    margin: 0 0 20px 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+    .btn button:hover {
+        background-color: rgb(212, 123, 138);
+    }
+
+#canvas {
+    background-color: black;
+}
+
+.btn {
+    background-color: black;
+}
+
+.client-info {
+    height: 550px;
+    width: 300px;
+    float: left;
+    display: flex;
+    border: 2px solid white;
+    margin-left: 160vh;
+    margin-top: -600px;
+}
+
+.titl {
+    height: 50px;
+    width: 300px;
+}
+
+    .titl h1 {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        margin-left: 85px;
+    }
+
+.data-txt {
+    width: 300px;
+    height: 100px;
+    color: white;
+}
+
+    .data-txt input {
+        width: 100px;
+    }
+
+    .data-txt label {
+        width: 50px;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+
+.select-gender label {
+    margin-right: 10px;
+}
+
+.userData{
+    color: white;
+    outline: none;
+}
+.data-txt input {
+    color: blue;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.client-info input {
+    margin-left: 20px;
+    width: 130px;
+}
+
+.no-outline {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+}
+
+.client-info button {
+    width: 60px;
+    height: 40px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    margin: -100px 0 0 200px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+    .client-info button:hover {
+        background-color: rgb(241, 128, 147);
+    }

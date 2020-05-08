@@ -1,0 +1,28 @@
+body
+{
+    background: url(cong.jpg);
+    background-size: cover;
+}
+
+.cong
+{
+    background: rgba(44,62,80,0.7);
+    padding: 40px;
+    height: 200px;
+    margin-left: 180px;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 350px;
+}
+.cong a
+{
+    color: rgb(255, 78, 113);
+    font-family:Tahoma, Geneva, sans-serif;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.cong h2
+{
+    margin-top: 10px;
+    margin-left: 10px;
+}

@@ -1,0 +1,47 @@
+﻿@model GymProject.ViewModel.Progress.ProgressViewModel
+    <link href="~/css/yourprogress.css" rel="stylesheet" />
+<div class="client-info">
+    <form asp-action="InsertData">
+        <div class="titl">
+            <h1>Put your info!</h1><br>
+        </div>
+        <div class="data-txt">
+            <label asp-for="Kg">KG:</label>
+            <input class="userData" type="text" asp-for="Kg" class="no-outline"><br><br>
+
+            <label asp-for="Height">HEIGHT:</label>
+            <input class="userData" type="text" asp-for="Height" class="no-outline"><br><br>
+
+            <label asp-for="ArmLeft">LEFT ARM CM:</label>
+            <input class="userData" type="text" asp-for="ArmLeft" class="no-outline"><br><br>
+
+            <label asp-for="ArmRight">RIGHT ARM CM:</label>
+            <input class="userData" type="text" asp-for="ArmRight" class="no-outline"><br><br>
+
+            <label asp-for="Shoulders">SHOULDERS CM:</label>
+            <input class="userData" type="text" asp-for="Shoulders" class="no-outline"><br><br>
+
+            <label asp-for="Chest">CHEST CM:</label>
+            <input class="userData" type="text" asp-for="Chest" class="no-outline"><br><br>
+
+            <label asp-for="Belly">BELLY CM:</label>
+            <input class="userData" type="text" asp-for="Belly" class="no-outline"><br><br>
+
+            <label asp-for="Fesier">FESIER CM:</label>
+            <input class="userData" type="text" asp-for="Fesier" class="no-outline"><br><br>
+
+            <label asp-for="Legs">LEGS CM:</label>
+            <input class="userData" type="text" asp-for="Legs" class="no-outline"><br><br>
+
+            <div class="select-gender">
+                <label for="class">GENDER:</label>
+                <select name="classlist" asp-for="Gender">
+                    <option value="sexM">M</option>
+                    <option value="sexF">F</option>
+                </select><br><br>
+                <input type="date">
+               <button>Check</button>
+            </div>
+        </div>
+    </form>
+</div>

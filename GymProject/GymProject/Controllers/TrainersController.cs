@@ -13,27 +13,18 @@ using GymProject.ViewModel.Trainers;
 
 namespace GymProject.Controllers
 {
-    [Authorize]
+    
     public class TrainersController : Controller
     {
         
         private readonly TrainersServices trainersServices;
-        public TrainersController(TrainersServices trainersServices)
+        private readonly ClassServices classServices;
+        public TrainersController(TrainersServices trainersServices,ClassServices classServices)
         {
             this.trainersServices = trainersServices;
+            this.classServices = classServices;
         }
-        class Trainer
-        {
-            string TrainerName;
-            string TrainerSurname;
-            string ClassName;
-           public  Trainer (string name,string surname,string className)
-            {
-                this.TrainerName = name;
-                this.TrainerSurname = surname;
-                this.ClassName = className;
-            }
-        }
+       
 
 
         public IActionResult Index()
@@ -41,15 +32,9 @@ namespace GymProject.Controllers
             try
             {
                 var trainersList = trainersServices.GetAllTrainers();
-                List<Trainer> trainers = new List<Trainer>();
                 
-                foreach (var obj in trainersList)
-                {
-                    var name = trainersServices.GetClassName(obj.ClassId);
-                    var info = new Trainer(obj.Name,obj.Surname,name);
-                    trainers.Add(info);
-                }
-                return View(trainers);
+              
+                return View(trainersList);
             }
             catch (Exception)
             {
@@ -60,16 +45,26 @@ namespace GymProject.Controllers
         [HttpGet]
         public IActionResult AddTrainer()
         {
+            var classList = classServices.GetAll();
+            IList<String> className = new List<String>();
+            foreach(var item in classList)
+            {
+                className.Add(item.ClassName);
+            }
+            ViewData["name"] = className;
+
             return View();
         }
         [HttpPost]
-        public IActionResult AddTrainer([FromForm]TrainersViewModel model)
+        public IActionResult AddTrainer(TrainersViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            trainersServices.AddTrainer(model.classId,model.Name, model.Surname);
+            var className = model.ClassName;
+            var idClass = classServices.GetByName(className);
+            trainersServices.AddTrainer(idClass.Id, model.Name, model.Surname);
             return RedirectToAction("Index");
         }
         [HttpGet]

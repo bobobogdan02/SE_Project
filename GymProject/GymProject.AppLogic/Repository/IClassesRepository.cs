@@ -6,6 +6,7 @@ namespace GymProject.AppLogic.Repository
 {
    public  interface IClassesRepository: IRepository<Classes>
     {
-        Classes GetClassByHour(DateTime date);
+        Classes GetClassById(Guid id);
+        Classes GetClassByName(string name);
     }
 }

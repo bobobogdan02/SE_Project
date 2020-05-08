@@ -92,6 +92,9 @@
           "buildMultiTargeting/Microsoft.AspnetCore.Identity.UI.targets": {}
         }
       },
+      "Microsoft.AspNetCore.Mvc.Analyzers/2.2.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Razor/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -739,6 +742,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Debug/3.1.0-preview1.19506.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.0-preview1.19506.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {}
         }
       },
       "Microsoft.Extensions.Options/3.1.3": {
@@ -2819,6 +2834,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Analyzers": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3"
         },
         "compile": {
@@ -2833,7 +2850,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "GymProject.AppLogic": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.AspNetCore.Mvc.Analyzers": "2.2.0",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3"
         },
@@ -3012,6 +3029,18 @@
         "staticwebassets/V4/lib/jquery/dist/jquery.js",
         "staticwebassets/V4/lib/jquery/dist/jquery.min.js",
         "staticwebassets/V4/lib/jquery/dist/jquery.min.map"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Analyzers/2.2.0": {
+      "sha512": "Wxxt1rFVHITp4MDaGQP/wyl+ROVVVeQCTWI6C8hxI8X66C4u6gcxvelqgnmsn+dISMCdE/7FQOwgiMx1HxuZqA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.analyzers/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.Mvc.Analyzers.dll",
+        "microsoft.aspnetcore.mvc.analyzers.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.analyzers.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Razor/2.2.0": {
@@ -3817,6 +3846,22 @@
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Debug/3.1.0-preview1.19506.1": {
+      "sha512": "zB9VDZ5DK42fl63itdsAmuwMFEh2vt1D5eVpX7+jzDKoz272q2iK3hqy4s7PA2V/9AzLaUXbVibN3P/havkNxA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.debug/3.1.0-preview1.19506.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Debug.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Debug.xml",
+        "microsoft.extensions.logging.debug.3.1.0-preview1.19506.1.nupkg.sha512",
+        "microsoft.extensions.logging.debug.nuspec",
+        "packageIcon.png"
       ]
     },
     "Microsoft.Extensions.Options/3.1.3": {
@@ -8932,26 +8977,30 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.3",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.3",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.3",
+      "Microsoft.AspNetCore.Mvc.Analyzers >= 2.2.0",
+      "Microsoft.EntityFrameworkCore >= 3.1.3",
+      "Microsoft.EntityFrameworkCore.Relational >= 3.1.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.3",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.3",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.3",
+      "Microsoft.Extensions.Logging.Debug >= 3.1.0-preview1.19506.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bogdan\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Gym2020\\GYM\\GymProject\\GymProject.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Gym2020\\Gym2020\\GYM\\GymProject\\GymProject.csproj",
       "projectName": "GymProject",
-      "projectPath": "G:\\Gym2020\\GYM\\GymProject\\GymProject.csproj",
-      "packagesPath": "C:\\Users\\Bogdan\\.nuget\\packages\\",
-      "outputPath": "G:\\Gym2020\\GYM\\GymProject\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\Gym2020\\Gym2020\\GYM\\GymProject\\GymProject.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Gym2020\\Gym2020\\GYM\\GymProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bogdan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8964,11 +9013,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
-              "projectPath": "G:\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj"
+            "C:\\Users\\User\\Desktop\\Gym2020\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Gym2020\\Gym2020\\GYM\\GymProject.AppLogic\\GymProject.AppLogic.csproj"
             },
-            "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj": {
-              "projectPath": "G:\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj"
+            "C:\\Users\\User\\Desktop\\Gym2020\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Gym2020\\Gym2020\\GYM\\GymProject.DataAccess\\GymProject.DataAccess.csproj"
             }
           }
         }
@@ -8994,6 +9043,18 @@
             "target": "Package",
             "version": "[3.1.3, )"
           },
+          "Microsoft.AspNetCore.Mvc.Analyzers": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.1.3, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[3.1.3, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[3.1.3, )"
@@ -9007,6 +9068,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.3, )"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[3.1.0-preview1.19506.1, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -9031,7 +9096,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

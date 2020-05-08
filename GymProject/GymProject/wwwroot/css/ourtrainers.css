@@ -1,0 +1,160 @@
+
+html, body{
+    width: 100%;
+}
+header{
+    background: rgb(0, 0, 0);  
+    width: 100%;
+	height: 12vh;     
+}
+.body{
+    background-color: white;
+    width: 100%;
+    padding-top: 15px;
+}
+.body-main{
+    height: 350px;
+    width: 100%;
+}
+.abonament
+{ 
+ 
+ width:60%;
+ height:200px;
+ margin:30px auto;
+}
+.abonament h1 
+{
+    text-align: center;
+    /* padding-top:20px; */
+}
+.abonament p
+{
+    text-align: center;
+    margin-top:20px;
+    font-size: 1.3rem;
+
+    
+}
+.text
+{
+    width:70%;
+    margin:20px auto;
+}
+.text h1{
+text-align: center;
+padding:20px;
+}
+.prices
+{
+    width:100%;
+    height:150px;
+    
+}
+.prices-top
+{
+    height:75px;
+    width:100%;
+    background-color: black;
+    margin-top: 20px;
+}
+.prices-bottom
+{
+    height:75px;
+    width:100%;
+    background-color: yellow;
+    padding: 20px;
+}
+.top
+{
+    color:white;
+    font-weight: bold;
+    font-size: x-large;
+}
+.bottom
+{
+    color:white;
+    font-size:medium ;
+
+}
+.text-bottom
+{
+    text-align: center;
+    font-size: small;
+}
+
+.h1
+{
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+.trainers
+{
+    width:72%;
+    margin:0 auto;
+   
+
+}
+.flip-box {
+    background-color: transparent;
+    width: 23%;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    float: left;
+    margin:10px;
+    
+  }
+  .flip-box img
+  {
+      width:100%;
+      height:250px;
+  }
+  .flip-box-front p{
+      text-align: center;
+      font-size: medium;
+      margin-top: 10px;
+
+  }
+  .flip-box-back p{
+      text-align: center;
+      font-size: medium;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }

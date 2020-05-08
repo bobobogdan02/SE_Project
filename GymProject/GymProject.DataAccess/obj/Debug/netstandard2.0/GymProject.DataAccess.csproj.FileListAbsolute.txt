@@ -44,3 +44,14 @@ G:\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAcc
 G:\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.csproj.CopyComplete
 G:\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.dll
 G:\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.pdb
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.DataAccess.deps.json
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.DataAccess.dll
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.DataAccess.pdb
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.AppLogic.dll
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\bin\Debug\netstandard2.0\GymProject.AppLogic.pdb
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.AssemblyInfo.cs
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.csproj.CopyComplete
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.dll
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.DataAccess\obj\Debug\netstandard2.0\GymProject.DataAccess.pdb

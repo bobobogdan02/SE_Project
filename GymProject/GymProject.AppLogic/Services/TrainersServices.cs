@@ -10,11 +10,11 @@ namespace GymProject.AppLogic.Services
     public class TrainersServices
     {
         private ITrainersRepository trainersRepository;
-        private IRepository<Trainers> repository;
-        public TrainersServices(ITrainersRepository trainersRepository, IRepository<Trainers> repository)
+       
+        public TrainersServices(ITrainersRepository trainersRepository)
         {
             this.trainersRepository = trainersRepository;
-            this.repository = trainersRepository;
+         
         }
         public Trainers GetTrainersByName(string name)
         {
@@ -32,20 +32,20 @@ namespace GymProject.AppLogic.Services
         }
         public IEnumerable<Trainers> GetAllTrainers()
         {
-            return repository.GetAll();
+            return trainersRepository.GetAll();
         }
         public Trainers GetTrainersById(Guid Id)
         {
             return trainersRepository.GetTrainersById(Id);
         }
-        public void AddTrainer(Classes classId,string name,string surname)
+        public void AddTrainer(Guid classId,string name,string surname)
         {
             
             trainersRepository.Add(new Trainers() {Id=Guid.NewGuid(),Name = name, Surname = surname,ClassId=classId });
         }
         
         
-        public Trainers Update (Guid id,string name, string surname, Classes classId)
+        public Trainers Update (Guid id,string name, string surname, Guid classId)
         {
             var trainer = trainersRepository.GetTrainersById(id);
             

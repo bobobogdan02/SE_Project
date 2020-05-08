@@ -24,8 +24,9 @@ namespace GymProject.DataAccess.BaseRepository
         }
         public Trainers GetTrainersById(Guid Id)
         {
-           // return dbContext.Trainers.Where(trainer => trainer.Id == Id).SingleOrDefault();
-            throw new Exception();
+             return dbContext.Trainers.Where(trainer => trainer.Id == Id).SingleOrDefault();
+           
+
         }
         public string GetClassName(Classes classId)
         {

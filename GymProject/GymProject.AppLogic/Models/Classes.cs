@@ -10,6 +10,11 @@ namespace GymProject.AppLogic.Models
         public Guid Id { get; set; }
         public string ClassName { get; set; }
         public DateTime HourClass { get; set; }
+        public void Update(string className,DateTime time)
+        {
+            this.ClassName = className;
+            this.HourClass = time;
+        }
     }
 }
 

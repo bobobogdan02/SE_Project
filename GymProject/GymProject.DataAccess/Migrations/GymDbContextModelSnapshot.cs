@@ -25,7 +25,7 @@ namespace GymProject.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("ClassIdId")
+                    b.Property<Guid>("ClassId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
@@ -41,8 +41,6 @@ namespace GymProject.DataAccess.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ClassIdId");
 
                     b.ToTable("Booking");
                 });
@@ -102,12 +100,10 @@ namespace GymProject.DataAccess.Migrations
                     b.Property<string>("AbonamentFacilities")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("priceAbonamentIdId")
+                    b.Property<Guid>("priceAbonamentId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("priceAbonamentIdId");
 
                     b.ToTable("Facilities");
                 });
@@ -182,7 +178,7 @@ namespace GymProject.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("ClassIdId")
+                    b.Property<Guid>("ClassId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
@@ -193,30 +189,7 @@ namespace GymProject.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClassIdId");
-
                     b.ToTable("Trainers");
-                });
-
-            modelBuilder.Entity("GymProject.AppLogic.Models.Booking", b =>
-                {
-                    b.HasOne("GymProject.AppLogic.Models.Classes", "ClassId")
-                        .WithMany()
-                        .HasForeignKey("ClassIdId");
-                });
-
-            modelBuilder.Entity("GymProject.AppLogic.Models.Facilities", b =>
-                {
-                    b.HasOne("GymProject.AppLogic.Models.PriceAbonament", "priceAbonamentId")
-                        .WithMany()
-                        .HasForeignKey("priceAbonamentIdId");
-                });
-
-            modelBuilder.Entity("GymProject.AppLogic.Models.Trainers", b =>
-                {
-                    b.HasOne("GymProject.AppLogic.Models.Classes", "ClassId")
-                        .WithMany()
-                        .HasForeignKey("ClassIdId");
                 });
 #pragma warning restore 612, 618
         }

@@ -6,16 +6,22 @@ using GymProject.AppLogic.Models;
 using GymProject.AppLogic.Repository;
 namespace GymProject.DataAccess.BaseRepository
 {
-    class ClassRepository :BaseRepository<Classes> , IClassesRepository
+    public class ClassRepository :BaseRepository<Classes> , IClassesRepository
     {
         public ClassRepository(GymDbContext dbContext) : base(dbContext)
         {
 
         }
-        public Classes GetClassByHour(DateTime date)
+        
+
+        public Classes GetClassById(Guid id)
         {
-            //return dbContext.Classes.Where(hour => hour.HourClass == date).SingleOrDefault();
-            throw new Exception();
+             return dbContext.Classes.Where(classId => classId.Id == id).SingleOrDefault();
+        
+        }
+        public Classes GetClassByName(string name)
+        {
+            return dbContext.Classes.Where(className => className.ClassName == name).SingleOrDefault();
         }
     }
 }

@@ -32,3 +32,11 @@ G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.
 G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
 G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
 G:\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.deps.json
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.dll
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.pdb
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
+C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb

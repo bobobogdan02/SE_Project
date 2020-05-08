@@ -13,6 +13,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using GymProject.DataAccess;
+using GymProject.AppLogic.Repository;
+using GymProject.DataAccess.BaseRepository;
+using GymProject.AppLogic.Services;
 
 namespace GymProject
 {
@@ -53,6 +56,14 @@ namespace GymProject
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false).AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<ITrainersRepository, TrainersRepository>();
+            services.AddScoped<IClassesRepository, ClassRepository>();
+            services.AddScoped<IProgressRepository, ProgressRepository>();
+            services.AddScoped<IBookClassRepository, BookRepository>();
+            services.AddScoped<TrainersServices>();
+            services.AddScoped<ClassServices>();
+            services.AddScoped<ProgressServices>();
+            services.AddScoped<BookClassServices>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

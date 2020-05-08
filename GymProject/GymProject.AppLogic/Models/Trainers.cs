@@ -11,9 +11,9 @@ namespace GymProject.AppLogic.Models
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public Classes ClassId { get; set; }
+        public Guid ClassId { get; set; }
 
-        public void Update(string name, string surname, Classes classId)
+        public void Update(string name, string surname, Guid classId)
         {
             this.Name = name;
             this.Surname = surname;

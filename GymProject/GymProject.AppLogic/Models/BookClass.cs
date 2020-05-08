@@ -12,7 +12,7 @@ namespace GymProject.AppLogic.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public string PhoneNr { get; set; }
-        public Classes ClassId { get; set; }
+        public Guid ClassId { get; set; }
 
     }
 }
