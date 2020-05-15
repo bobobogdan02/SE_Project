@@ -10,7 +10,6 @@ namespace GymProject.AppLogic.Models
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public float Kg { get; set; }
-        public float Height { get; set; }
         public float ArmLeft { get; set; }
         public float ArmRight { get; set; }
         public float Shoulders { get; set; }
@@ -19,6 +18,7 @@ namespace GymProject.AppLogic.Models
         public float Fesier { get; set; }
         public float Legs { get; set; }
         public string Gender { get; set; }
+        public string Month { get; set; }
 
     }
 }

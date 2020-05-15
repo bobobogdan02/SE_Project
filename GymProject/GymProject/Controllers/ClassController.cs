@@ -11,9 +11,13 @@ namespace GymProject.Controllers
     public class ClassController : Controller
     {
         private readonly ClassServices classServices;
-        public ClassController(ClassServices classServices)
+        private readonly BookClassServices book;
+        private readonly TrainersServices trainers;
+        public ClassController(ClassServices classServices,BookClassServices book, TrainersServices trainers)
         {
             this.classServices = classServices;
+            this.book = book;
+            this.trainers = trainers;
         }
         public IActionResult Index()
         {
@@ -81,6 +85,24 @@ namespace GymProject.Controllers
         {
             try
             {
+                Guid id = Guid.Empty;
+                Guid.TryParse(Id, out id);
+                var bookList = book.GetAllBooking();
+                foreach(var item in bookList)
+                {
+                    if(item.ClassId==id)
+                    {
+                        book.Delete((item.Id).ToString());
+                    }
+                }
+                var trainersList = trainers.GetAllTrainers();
+                foreach (var item in trainersList)
+                {
+                    if (item.ClassId == id)
+                    {
+                        trainers.Delete((item.Id).ToString());
+                    }
+                }
                 classServices.Delete(Id);
                 return RedirectToAction("Index");
             }

@@ -81,7 +81,13 @@ namespace GymProject.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-                    
+                    var identityRole = new IdentityRole("User");
+                    if (await roleManager.RoleExistsAsync("User") == false)
+                    {
+                        await roleManager.CreateAsync(identityRole);
+                    }
+                    await _userManager.AddToRoleAsync(user, identityRole.Name.ToString());
+
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

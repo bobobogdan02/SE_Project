@@ -7,6 +7,7 @@ namespace GymProject.AppLogic.Repository
 {
     public interface IBookClassRepository:IRepository<Booking>
     {
-
+        Booking GetById(Guid id);
+        Booking GetByClassName(string ClassName);
     }
 }

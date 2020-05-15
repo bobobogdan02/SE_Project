@@ -5,7 +5,106 @@
     ViewData["Title"] = "Log in";
 }
 
-<h1>@ViewData["Title"]</h1>
+<style>
+    body {
+        font-family: Tahoma, Geneva, sans-serif;
+        color: #fff;
+        background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url('/img/cong.jpg');
+        background-size: cover;
+    }
+
+    .signin {
+        background: rgba(44,62,80,0.7);
+        padding: 40px;
+        width: 320px;
+        margin: auto;
+        margin-top: 90px;
+        height: 400px;
+        margin-left: 180x;
+    }
+
+#titl{
+    margin-left: 670px;
+}
+    form {
+        width: 240px;
+        text-align: center;
+        margin-left: 600px;
+    }
+
+    input {
+        width: 240px;
+        text-align: center;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-family: 'Play', sans-serif;
+        font-size: 16px;
+        font-weight: 200px;
+        padding: 10px 0;
+        transition: border 0.5s;
+        outline: none;
+        color: #fff;
+    }
+
+        input[type=button] {
+            border: none;
+            width: 190px;
+            background: white;
+            color: #000;
+            font-size: 16px;
+            line-height: 25px;
+            padding: 10px 0;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+            input[type=button]:hover {
+                color: #fff;
+                background-color: black;
+            }
+
+    h2 {
+        color: white;
+    }
+
+    .signin a {
+        color: crimson;
+        text-decoration: blink;
+    }
+
+        .signin a:hover {
+            color: skyblue;
+        }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    ::placeholder {
+        color: aliceblue;
+        opacity: 0.8; /* Firefox */
+    }
+
+    button {
+        width: 80px;
+        height: 40px;
+        box-shadow: 0 5px 25px rgba(0,0,0,.5);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    button:hover {
+        background-color: cyan;
+    }
+    hr{
+        border-bottom: 2px solid black;
+    }
+
+</style>
+ <h1 id="titl">@ViewData["Title"]</h1>
 <div class="row">
     <div class="col-md-4">
         <section>
@@ -32,7 +131,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Log in</button>
+                    <button type="submit">Log in</button>
                 </div>
                 <div class="form-group">
                     <p>
@@ -48,37 +147,8 @@
             </form>
         </section>
     </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h4>Use another service to log in.</h4>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
-    </div>
 </div>
+  
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

@@ -15,7 +15,7 @@ namespace GymProject.DataAccess.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -152,14 +152,14 @@ namespace GymProject.DataAccess.Migrations
                     b.Property<string>("Gender")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("Height")
-                        .HasColumnType("real");
-
                     b.Property<float>("Kg")
                         .HasColumnType("real");
 
                     b.Property<float>("Legs")
                         .HasColumnType("real");
+
+                    b.Property<string>("Month")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Shoulders")
                         .HasColumnType("real");

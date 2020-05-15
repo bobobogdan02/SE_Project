@@ -1,5 +1,5 @@
 ﻿@model GymProject.ViewModel.Progress.ProgressViewModel
-    <link href="~/css/yourprogress.css" rel="stylesheet" />
+    
 <div class="client-info">
     <form asp-action="InsertData">
         <div class="titl">
@@ -8,10 +8,6 @@
         <div class="data-txt">
             <label asp-for="Kg">KG:</label>
             <input class="userData" type="text" asp-for="Kg" class="no-outline"><br><br>
-
-            <label asp-for="Height">HEIGHT:</label>
-            <input class="userData" type="text" asp-for="Height" class="no-outline"><br><br>
-
             <label asp-for="ArmLeft">LEFT ARM CM:</label>
             <input class="userData" type="text" asp-for="ArmLeft" class="no-outline"><br><br>
 
@@ -32,15 +28,31 @@
 
             <label asp-for="Legs">LEGS CM:</label>
             <input class="userData" type="text" asp-for="Legs" class="no-outline"><br><br>
+            
 
             <div class="select-gender">
-                <label for="class">GENDER:</label>
+                <label asp-for="Gender">GENDER:</label>
                 <select name="classlist" asp-for="Gender">
                     <option value="sexM">M</option>
                     <option value="sexF">F</option>
                 </select><br><br>
-                <input type="date">
-               <button>Check</button>
+                <label asp-for="Month">Date:</label>
+            <select asp-for="Month">
+                <option>Select a Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+                </select><br><br>
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </div>
     </form>

@@ -22,5 +22,16 @@ namespace GymProject.AppLogic.Services
         {
             return bookRepository.GetAll();
         }
+        public Booking GetById(Guid id)
+        {
+            return bookRepository.GetById(id);
+        }
+        public void Delete(string id)
+        {
+            Guid Id = Guid.Empty;
+            Guid.TryParse(id, out Id);
+            var book = bookRepository.GetById(Id);
+            bookRepository?.Delete(book);
+        }
     }
 }

@@ -13,9 +13,13 @@ namespace GymProject.AppLogic.Services
         {
             this.progressRepository = progressRepository;
         }
-        public void AddStats(Guid UserId, float Kg, float ArmLeft, float ArmRight, float Height, float Shoulders, float Chest, float Belly, float Fesier, float Legs, string Gender)
+        public void AddStats(Guid UserId,string month, float Kg, float ArmLeft, float ArmRight, float Shoulders, float Chest, float Belly, float Fesier, float Legs, string Gender)
         {
-            progressRepository.Add(new Progress() { Id = Guid.NewGuid(), UserId = UserId, Kg = Kg, ArmLeft = ArmLeft, ArmRight = ArmRight, Height = Height, Shoulders = Shoulders, Chest = Chest, Belly = Belly, Fesier = Fesier, Legs = Legs, Gender = Gender });
+            progressRepository.Add(new Progress() { Id = Guid.NewGuid(),Month=month, UserId = UserId, Kg = Kg, ArmLeft = ArmLeft, ArmRight = ArmRight, Shoulders = Shoulders, Chest = Chest, Belly = Belly, Fesier = Fesier, Legs = Legs, Gender = Gender });
+        }
+        public IEnumerable<Progress> GetAllData()
+        {
+            return progressRepository.GetAll();
         }
     }
 }

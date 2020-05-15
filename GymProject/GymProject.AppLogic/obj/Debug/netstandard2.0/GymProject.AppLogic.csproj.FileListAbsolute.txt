@@ -40,3 +40,20 @@ C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstand
 C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
 C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
 C:\Users\User\Desktop\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.deps.json
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.dll
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.pdb
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csprojAssemblyReference.cache
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csproj.CoreCompileInputs.cache
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfoInputs.cache
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
+D:\Facultate\Gym2020\Gym2020\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb
+G:\Downloads Browser\GYM (2)\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.deps.json
+G:\Downloads Browser\GYM (2)\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.dll
+G:\Downloads Browser\GYM (2)\GYM\GymProject.AppLogic\bin\Debug\netstandard2.0\GymProject.AppLogic.pdb
+G:\Downloads Browser\GYM (2)\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.csprojAssemblyReference.cache
+G:\Downloads Browser\GYM (2)\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfoInputs.cache
+G:\Downloads Browser\GYM (2)\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.AssemblyInfo.cs
+G:\Downloads Browser\GYM (2)\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.dll
+G:\Downloads Browser\GYM (2)\GYM\GymProject.AppLogic\obj\Debug\netstandard2.0\GymProject.AppLogic.pdb

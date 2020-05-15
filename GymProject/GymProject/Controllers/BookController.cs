@@ -20,20 +20,52 @@ namespace GymProject.Controllers
             this.classServices = classServices;
             this.UserManager = userManager;
         }
-        
         public IActionResult Index()
         {
+            try
+            {
+                var bookingList = bookServices.GetAllBooking();
+              
+                var model = new List<BookClassViewModel>();
+
+                foreach (var item in bookingList)
+                {
+                    var currentItem = new BookClassViewModel();
+                    var name = classServices.GetById(item.ClassId);
+                    currentItem.ClassName = name.ClassName;
+                    currentItem.Name = item.Name;
+                    currentItem.Surname = item.Surname;
+                    currentItem.Id = item.Id;
+                    currentItem.PhoneNr = item.PhoneNr;
+                    model.Add(currentItem);
+
+                }
+
+                ViewData["bookings"] = model;
+                return View();
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+        
+        public IActionResult Add()
+        {
+           
+
+
             var classList = classServices.GetAll();
             IList<String> className = new List<String>();
             foreach (var item in classList)
             {
                 className.Add(item.ClassName);
             }
-            ViewData["classname"] = className;
-            return View(new BookClassViewModel());
+            ViewData["name"] = className;
+            return View();
         }
         [HttpPost]
-        public IActionResult Index(BookClassViewModel model)
+        public IActionResult Add(BookClassViewModel model)
         {
             if(!ModelState.IsValid)
             {
@@ -47,5 +79,18 @@ namespace GymProject.Controllers
             return RedirectToAction("Index");
 
         }
+        public IActionResult Delete(string id)
+        {
+            try
+            {
+                bookServices.Delete(id);
+                return RedirectToAction("Index");
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+        
     }
 }

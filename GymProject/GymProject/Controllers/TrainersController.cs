@@ -32,9 +32,22 @@ namespace GymProject.Controllers
             try
             {
                 var trainersList = trainersServices.GetAllTrainers();
+                var model = new List<TrainersViewModel>();
                 
-              
-                return View(trainersList);
+                  foreach(var item in trainersList)
+                  {
+                    var currentItem = new TrainersViewModel();
+                    var name = classServices.GetById(item.ClassId);
+                      currentItem.ClassName = name.ClassName;
+                      currentItem.Name = item.Name;
+                      currentItem.Surname = item.Surname;
+                      currentItem.Id = item.Id;
+                      model.Add(currentItem);
+
+                  }
+               
+                ViewData["trainers"] = model;
+                return View();
             }
             catch (Exception)
             {
@@ -80,8 +93,16 @@ namespace GymProject.Controllers
                     Surname = trainers.Surname,
                     classId = trainers.ClassId
                 };
+                var classList = classServices.GetAll();
+                IList<String> className = new List<String>();
+                foreach (var item in classList)
+                {
+                    className.Add(item.ClassName);
+                }
+                ViewData["name"] = className;
                 return View(viewModel);
             }
+            
             catch (Exception e)
             {
                 return BadRequest(e.Message);
@@ -94,7 +115,10 @@ namespace GymProject.Controllers
         {
             try
             {
-                trainersServices.Update(viewModel.Id,viewModel.Name, viewModel.Surname, viewModel.classId);
+                var className = viewModel.ClassName;
+                var idClass = classServices.GetByName(className);
+
+                trainersServices.Update(viewModel.Id,viewModel.Name, viewModel.Surname, idClass.Id);
                 return RedirectToAction("Index");
             }
             catch (Exception e)
@@ -114,6 +138,5 @@ namespace GymProject.Controllers
                 return BadRequest(e.Message);
             }
         }
-
     } 
 }

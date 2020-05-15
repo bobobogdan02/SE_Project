@@ -1,47 +1,35 @@
-﻿@model GymProject.ViewModel.BookClass.BookClassViewModel
+﻿@using GymProject.ViewModel.BookClass
+
+
+
 @{
-
-    ViewData["Title"] = "Book";
+    ViewData["Title"] = "Index";
 }
-  
-<div class="main">
-    <div class="book">
-
-        <div class="book-left">
-        </div>
-        <div class="book-right">
-            <form asp-action="Book">
-                <div class="text2">
-                    <h1>Book Your Class</h1>
-                </div>
-                <div class="data">
-                    <label asp-for="Name">Name</label><br>
-                    <input type="text" asp-for="Name" class="no-outline">
-                </div>
-                <div class="data">
-                    <label asp-for="Surname">Surname</label><br>
-                    <input type="text" asp-for="Surname" class="no-outline">
-                </div>
-                <div class="data">
-                    <label asp-for="PhoneNr">Phone Number</label><br>
-                    <input type="text" asp-for="PhoneNr" class="no-outline">
-                </div>
-                <div class="select">
-                    <label for="class">Choose your class:</label>
-                    <div class="form-group">
-                        <select asp-for="ClassName">
-                            <option>Select a Class</option>
-                            @foreach (var item in ViewData["classname"] as IList<String>)
-                            {
-                                <option value="@item">@item</option>
-                            }
-                        </select>
-                    </div>
-                </div>
-                <button class="button no-outline">BOOK</button>
-            </form>
-        </div>
-    </div>
-</div>
 
 
+
+<a asp-action="Add">Book Another Class</a>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Surname</td>
+            <td>Phone Number</td>
+            <td>Class </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewData["bookings"] as IList<BookClassViewModel>)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.PhoneNr</td>
+                <td>@item.ClassName</td>
+                <td><a asp-action="Delete" asp-route-id="@item.Id">Cancel</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

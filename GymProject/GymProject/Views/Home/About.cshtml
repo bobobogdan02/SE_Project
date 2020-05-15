@@ -18,24 +18,28 @@
     font-weight: bold;
     color: white;
     margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.main-p p{
-    text-align: center;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: larger;
-    color: white;
-    font-size: 2rem;
-	font-weight: 300;
-}
+    .main-p p {
+        text-align: center;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: larger;
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 .main-p span{
     color: crimson;
-    font-size: 2rem;
+    font-size: 1rem;
 	font-weight: 300;
 }
 .main-cont{
     width: 100%;
     height: auto;
-    background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(ff.jpg);
+    background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url('/img/ff.jpg');
     background-size: cover;
     padding-bottom: 40px;
 }
@@ -51,17 +55,17 @@
     margin: 0 auto;
 }
 .image img{
-    height: 350px;
-    width: 400px;
+    height: 250px;
+    width: 300px;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 30px;
 }
 .main-cont button{
-    width: 120px;
-    height: 50px;
+    width: 200px;
+    height: 60px;
     box-shadow: 0 5px 25px rgba(0,0,0,.5);
-    margin: 20px 0 0 700px;
+    margin: 20px 0 0 630px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.349);
 }
@@ -72,7 +76,7 @@
     margin-top: 60px;
 }
 .contact p{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
 }
@@ -80,15 +84,16 @@
     margin: 10px 300px 10px 300px;
     text-align: center;
     color: white;
+    font-size: 20px;
     
 }
 </style>
     <div class="main-p">
-        <h2>Top services in the largest fitness club in New York.</h2><br>
-        <p>Step into our spacious fitness rooms and you will realize what it means to train in a modern space and be greeted by a professional team of instructors. <a>StayUp <span>To </span> Lift</a> Club offers you over 3,000 square meters of modern equipment, excellent facility and the best New York Group Fitness classes. Come and discover the <a>StayUp <span>To </span>Lift</a> experience!</p><br>
+        <h2>Top services in the largest fitness club in New York.</h2>
+        <p>Step into our spacious fitness rooms and you will realize what it means to train in a modern space and be greeted by a professional team of instructors. <a>StayUp <span>To </span> Lift</a> Club offers you over 3,000 square meters of modern equipment, excellent facility and the best New York Group Fitness classes. Come and discover the <a>StayUp <span>To </span>Lift</a> experience!</p>
         <div class="main-cont">
-            <h2>Personal Training!</h2><br>
-            <p>Make the most of your time at the gym with the help of a personal trainer. From workouts created specifically for you, to the momentum you need to finish that difficult set of exercises, our instructors are always ready to help you discover your motivation and make progress toward your goals.</p><br>
+            <h2>Personal Training!</h2>
+            <p>Make the most of your time at the gym with the help of a personal trainer. From workouts created specifically for you, to the momentum you need to finish that difficult set of exercises, our instructors are always ready to help you discover your motivation and make progress toward your goals.</p>
             <div class="image">
                 <img src="~/img/about1.jpg">
                 <img src="~/img/about2.jpg">
@@ -96,8 +101,10 @@
                 <img src="~/img/about4.jpeg">
                 <img src="~/img/about5.jpg">
                 <img src="~/img/about6.jpg">
+                <img src="~/img/gymgirl.png">
+                <img src="~/img/work.jpg">
             </div>
-            <button onclick="window.location.href='file:///C:/Users/Bianca/Desktop/navbar/ourtrainers.html'">See more details</button>
+           <button><a asp-controller="Trainers" asp-action="Index" class="text-white">See more details</a></button>
             <div class="contact">
                 <p>Contact Info</p>
                 <h3>

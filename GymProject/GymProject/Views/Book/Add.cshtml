@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+}
+
+@model GymProject.ViewModel.BookClass.BookClassViewModel
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Add">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Surname" class="control-label"></label>
+                    <input asp-for="Surname" class="form-control" />
+                    <span asp-validation-for="Surname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNr" class="control-label"></label>
+                    <input asp-for="PhoneNr" class="form-control" />
+                    <span asp-validation-for="PhoneNr" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <select asp-for="ClassName">
+                        <option>Select a Class</option>
+                        @foreach (var item in ViewData["name"] as IList<String>)
+                        {
+                            <option value="@item">@item</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Book" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>

@@ -1,100 +1,159 @@
-﻿@model IEnumerable<GymProject.AppLogic.Models.Trainers>
+﻿@using GymProject.ViewModel.Trainers
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> userManager
+@inject SignInManager<IdentityUser> signInManager
 
 @{
     ViewData["Title"] = "Index";
 }
 <style>
-    
 
-.body{
-    background-color: white;
-    width: 100%;
-    padding-top: 15px;
-}
-.body-main{
-    height: 350px;
-    width: 100%;
-}
-.abonament
-{ 
- 
- width:60%;
- height:200px;
- margin:30px auto;
-}
-.abonament h1 
-{
-    text-align: center;
-    /* padding-top:20px; */
-}
-.abonament p
-{
-    text-align: center;
-    margin-top:20px;
-    font-size: 1.3rem;
 
-    
-}
-.text
-{
-    width:70%;
-    margin:20px auto;
-}
-.text h1{
-text-align: center;
-padding:20px;
-}
-.prices
-{
-    width:100%;
-    height:150px;
-    
-}
-.prices-top
-{
-    height:75px;
-    width:100%;
-    background-color: black;
-    margin-top: 20px;
-}
-.prices-bottom
-{
-    height:75px;
-    width:100%;
-    background-color: yellow;
-    padding: 20px;
-}
-.top
-{
-    color:white;
-    font-weight: bold;
-    font-size: x-large;
-}
-.bottom
-{
-    color:white;
-    font-size:medium ;
+    .body {
+        background-color: white;
+        width: 100%;
+        padding-top: 15px;
+    }
 
-}
-.text-bottom
-{
-    text-align: center;
-    font-size: small;
-}
+    .body-main {
+        height: 350px;
+        width: 100%;
+    }
 
-.h1
-{
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 50px;
-}
-.trainers
-{
-    width:72%;
-    margin:0 auto;
-   
+    .abonament {
+        width: 60%;
+        height: 200px;
+        margin: 30px auto;
+    }
 
-}
+        .abonament h1 {
+            text-align: center;
+            /* padding-top:20px; */
+        }
+
+        .abonament p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.3rem;
+        }
+
+    .text {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+        .text h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+    .prices {
+        width: 100%;
+        height: 150px;
+    }
+
+    .prices-top {
+        height: 75px;
+        width: 100%;
+        background-color: black;
+        margin-top: 20px;
+    }
+
+    .prices-bottom {
+        height: 75px;
+        width: 100%;
+        background-color: yellow;
+        padding: 20px;
+    }
+
+    .top {
+        color: white;
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .bottom {
+        color: white;
+        font-size: medium;
+    }
+
+    .text-bottom {
+        text-align: center;
+        font-size: small;
+    }
+
+    .h1 {
+        text-align: center;
+        padding: 30px;
+        padding-bottom: 50px;
+    }
+
+    .trainers {
+        width: 72%;
+        margin: 0 auto;
+    }
+    .flip-box {
+        background-color: transparent;
+        width: 23%;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+        float: left;
+        margin: 10px;
+    }
+
+        .flip-box img {
+            width: 100%;
+            height: 250px;
+        }
+
+    .flip-box-front p {
+        text-align: center;
+        font-size: medium;
+        margin-top: 10px;
+    }
+
+    .flip-box-back p {
+        text-align: center;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-box-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    /* Style the back side */
+    .flip-box-back {
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+    }
 </style>
 
 <div class="body-main">
@@ -149,44 +208,42 @@ padding:20px;
 
     </div>
     <h1 class="h1">ANTRENORII NOȘTRI</h1>
-    <p>
-        <a  asp-action="AddTrainer">Create New</a>
-    </p>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    Name
-                </th>
-                <th>
-                    Surname
-                </th>
-                <th>
-                    Class
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @item.Name
-                    </td>
-                    <td>
-                        @item.Surname
-                    </td>
-                    <td>
-                        @item.ClassId
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    @if (signInManager.IsSignedIn(User))
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (await userManager.IsInRoleAsync(user, "Administrator"))
+        {
+            <p>
+                <a asp-action="AddTrainer">Create New</a>
+            </p>
+        }
+    }
+    <div class="trainers">
+        @foreach (var item in ViewData["trainers"] as IList<TrainersViewModel>)
+        {
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <p>@item.Name @item.Surname</p>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Let's work out!</h2>
+                        <p>@item.ClassName</p>
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            var user = await userManager.GetUserAsync(User);
+                            if (await userManager.IsInRoleAsync(user, "Administrator"))
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.Id">Edit|</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            }
+                        }
+
+
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>

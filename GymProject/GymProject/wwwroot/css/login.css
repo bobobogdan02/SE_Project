@@ -2,7 +2,7 @@ body
 {
     font-family: Tahoma, Geneva, sans-serif;
     color: #fff;
-    background: url(cong.jpg);
+    background: url('/img/cong.jpg');
     background-size: cover;
 }
 .signin
@@ -16,10 +16,10 @@ body
     margin-left: 180x;
     
 }
-form
-{
+form {
     width: 240px;
     text-align: center;
+    margin-left: 600px;
 }
 input
 {
